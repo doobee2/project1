@@ -37,10 +37,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>DUCKEDU::서비스</title>
+    <%@ include file="../head.jsp" %>
+    <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
+</head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항 목록</title>
-    <%@ include file="../head.jsp" %>
+
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
 
@@ -108,13 +112,17 @@
     </style>
 </head>
 <body>
+
 <div class="container">
     <header class="hd" id="hd">
-        <%@ include file="../header.jsp" %>
+    <%@ include file="../header.jsp" %>
     </header>
-    <div class="contents" id="contents">
+    <div  class="contents" id="contents">
+        <div class="sub">
+            <h2>후원안내</h2>
+        </div>
         <div class="breadcrumb">
-            <p><a href="/">HOME</a> &gt; <a href="">공지사항</a> &gt; <span>공지사항 목록</span></p>
+            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/company01.jsp"> 공지사항 </a> < <span> 리스트 </span></p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
@@ -173,6 +181,7 @@
             </div>
         </section>
     </div>
+
     <footer class="ft" id="ft">
         <%@ include file="../footer.jsp" %>
     </footer>
