@@ -14,9 +14,16 @@
             overflow:hidden;
             display: flex;}
 
-        .text { margin-top:200px; display: block; }
-        .map {  margin: 5px; float:left; width: 50px; height: 50px; }
-        maparea {}
+        .text {
+            margin-top:200px;
+            display: inline-block;
+            width: 500px;
+            vertical-align: top;
+            padding-top: 200px;
+        }
+
+        .mapp {  margin: 5px; float:left; width: 50px; height: 50px; }
+        .maparea { display: inline-block; width: 500px;}
     </style>
 
     <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
@@ -73,17 +80,18 @@
                     </script>
                     <script type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.js">
                     </script>
-                    <div class="text">
-                        <h2>DUCK EDU는 언제나 여러분을 환영합니다.</h2>
-                        <p>서울 금천구 벚꽃로 309</p>
-                        <p>tel : 02-1004-1004</p>
 
-                        <a href="https://naver.me/FzQ6Ofpu"><img src="/image/common/map1.png" alt="네이버지도 바로가기" class="map"></a>
-                        <a href="https://place.map.kakao.com/21160721"><img src="/image/common/map2.png" alt="카카오맵 바로가기"  class="map"></a>
-                        <a href="https://goo.gl/maps/HBSjHapKuPdRNFmg9"><img src="/image/common/map3.png" alt="구글맵  바로가기"  class="map"></a>
+                </div>
+                <div class="text">
+                    <h2>DUCK EDU는 언제나 여러분을 환영합니다.</h2>
+                    <p>서울 금천구 벚꽃로 309</p>
+                    <p>tel : 02-1004-1004</p>
+                    <div class="mapp">
+                    <a href="https://naver.me/FzQ6Ofpu"><img src="/image/common/map1.png" alt="네이버지도 바로가기"></a>
+                    <a href="https://place.map.kakao.com/21160721"><img src="/image/common/map2.png" alt="카카오맵 바로가기"></a>
+                    <a href="https://goo.gl/maps/HBSjHapKuPdRNFmg9"><img src="/image/common/map3.png" alt="구글맵  바로가기"></a>
                     </div>
                 </div>
-
 
 
             </div>

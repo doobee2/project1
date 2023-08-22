@@ -5,26 +5,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=dege"> <!-- 인터넷익스프로러로 접근시 엣지로 연결되게 함 -->
-<meta http-equiv="Author" content="그로우앤조이 콘텐츠 제작팀">
-<meta http-equiv="Publisher" content="그로우앤조이 콘텐츠 제작팀">
-<meta http-equiv="Copyright" content="Copyright@grownjoy.co.kr">
+<meta http-equiv="Author" content="덕에듀 콘텐츠 제작팀">
+<meta http-equiv="Publisher" content="덕에듀 콘텐츠 제작팀">
+<meta http-equiv="Copyright" content="Copyright@duckedu.co.kr">
 
 <!-- 검색엔진 최적화(SEO) -->
-<meta name="Subject" content="그로우앤조이, 그로우앤조이IT">
-<meta name="Keyword" content="그로우앤조이, 그로우앤조이 IT, 교재, 이벤트">
-<meta name="Description" content="그로우앤조이는 교육 교재 정보, 커뮤니티, 게시판">
+<meta name="Subject" content="덕에듀, 덕에듀 교육">
+<meta name="Keyword" content="덕에듀, 덕에듀 멘토링, 교재, 이벤트">
+<meta name="Description" content="덕에듀 교육 교재 정보, 커뮤니티, 게시판">
 <meta name="Robots" content="index, follow">
 
 <!-- 오픈 그래프(Open graph)-->
 <meta property="og:type" content="website">
-<meta property="og:title" content="그로우앤조이">
+<meta property="og:title" content="덕에듀">
 <meta property="og:description" content="모두와 함께하며 소통으로 함께하는 기업">
 <meta property="og:image" content="https://github.com/chunjae-luigi/project1/image/logo.png">
 <meta property="og:url" content="https://github.com/chunjae-luigi/project1">
 
 <!-- 트위터 -->
 <meta name="twitter:card" content="picture">
-<meta name="twitter:title" content="그로우앤조이">
+<meta name="twitter:title" content="덕에듀">
 <meta name="twitter:description" content="앞선 생각으로 더 큰 미래의 교육을 준비하는 기업">
 <meta name="twitter:image" content="https://github.com/chunjae-luigi/project1/image/logo.png">
 
@@ -52,6 +52,7 @@
 <link rel="stylesheet" href="<%=headPath%>/css/common.css">
 <link rel="stylesheet" href="<%=headPath%>/css/hd.css">
 <link rel="stylesheet" href="<%=headPath%>/css/ft.css">
+<link rel="stylesheet" href="<%=headPath%>/css/fonts.css">
 
 <!-- 필요한 플러그인 연결 -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>

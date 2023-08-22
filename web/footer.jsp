@@ -25,9 +25,9 @@
 </div>
 <div class="ft_wrap2">
     <p class="copyright">
-        <span>그로우앤조이</span>
+        <span>DUCK EDU</span>
         <span>서울시 금천구 가산로9길 54</span>
-        <span>대표자 최상민</span>
+        <span>대표자 이슬비</span>
         <span>사업자등록번호 XXX-XX-XXXXX</span>
         <span>통신판매신고번호 제XX-XXX호</span>
         <span class="end">부가통신사업신고 XXXXXX</span>

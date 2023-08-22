@@ -2,22 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>그로우앤조이::서비스</title>
+    <title>DUCKEDU::사업소개:멘토링</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
-        @font-face {
-            font-family: 'HakgyoansimWoojuR';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'SBAggroB';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -65,6 +54,12 @@
             transform: translateY(-10px) scale(1.02); /* 약간 들쭉날쭉한 느낌으로 */
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
         }
+
+
+        h2 { font-family: KCC-Ganpan; }
+        .container { font-family: omyu_pretty; }
+
+
     </style>
 </head>
 <body>
@@ -74,14 +69,14 @@
     </header>
     <div  class="contents" id="contents">
         <div class="sub">
-            <h2>조이서비스</h2>
+            <h2>사업소개</h2>
         </div>
         <div class="breadcrumb">
-            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/sample.jsp"> 조이서비스 </a> &gt; <span> 서비스 </span></p>
+            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/sample.jsp"> 사업소개 </a> &gt; <span> 멘토링 </span></p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">서비스</h2>
+                <h2 class="page_tit">멘토링</h2>
             </div>
 
             <div class="section">

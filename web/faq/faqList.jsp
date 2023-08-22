@@ -89,6 +89,7 @@
         .faqlist li .ans {
             padding: 20px;
             background-color: #ff71d4;
+            font-family: omyu_pretty;
             color: #ffffff;}
         .faqlist li .que {
             height: 50px;
@@ -98,6 +99,7 @@
             padding: 20px;
             font-size: 26px;
             border: 3px solid #FFA2E7;
+            font-family: omyu_pretty;
         }
         .ans { display:none; }
         .que:after { content:"▼"; padding-left: 50px;}
@@ -108,6 +110,10 @@
             margin: 0 auto;
             width: 200px;
         }
+        h2 { font-family: KCC-Ganpan; }
+
+
+
     </style>
 </head>
 <body>

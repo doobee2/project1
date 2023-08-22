@@ -6,18 +6,7 @@
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
-        @font-face {
-            font-family: 'HakgyoansimWoojuR';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'SBAggroB';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+
     .text-box {
     align-items: center;
     width: 1200px;
@@ -30,7 +19,7 @@
     display: block;
     }
     .text-box:hover {
-    background-color: #ffed88;
+    border: 5px solid #90dfdc;
     transform: scale(1.05);
     }
     .text-box-content {
@@ -47,6 +36,11 @@
     color: #555;
     margin-top: 5px;
     }
+
+        h2 { font-family: KCC-Ganpan; }
+        .content { font-family: omyu_pretty; }
+
+
     </style>
 </head>
 <body>
@@ -71,8 +65,8 @@
             <div class="title">2024</div>
             <div class="text-box-content">
                 <div class="content">
-                    이곳에 <br>
-                    그로우앤조이의 연혁을 적어주세요! <br>
+                    01.02. 2024 올해의 브랜드 최우수상 수상 <br>
+                    02.21. SAMSAM 장학생 취업 연계 협약 <br>
                 </div>
             </div>
         </div>
@@ -81,10 +75,10 @@
             <div class="title">2023</div>
             <div class="text-box-content">
                 <div class="content">
-                    08.17. 2023 올해의 브랜드 최우수상 수상 <br>
-                    08.16. 그로우앤조이 홈페이지 오픈<br>
-                    08.01. 교육서비스 개발 시작<br>
-                    07.31. 교육브랜드 그로우앤조이(Grow&Joy) 설립<br>
+                    08.22. 2023 서울시 후원 모범 브랜드 선정<br>
+                    08.18. 덕에듀(Duck Edu) 홈페이지 오픈<br>
+                    07.10. 교육서비스 개발 시작<br>
+                    07.04. 교육브랜드 덕에듀(Duck Edu) 설립<br>
 
                 </div>
             </div>

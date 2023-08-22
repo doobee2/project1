@@ -5,7 +5,7 @@
 %>
 <div class="hd_wrap" id="hdWrap">
     <a href="<%=headerPath %>/" class="logo">
-        <img src="<%=headerPath %>/image/common/logo.png" alt="그로우앤조이 로고타입">
+        <img src="<%=headerPath %>/image/common/logo.png" alt="덕에듀 로고타입">
     </a>
     <nav class="gnb" id="hdGnb">
         <ul class="menu">

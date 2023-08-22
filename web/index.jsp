@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>천재교육</title>
+    <title>DUCK EDU</title>
     <%@ include file="head.jsp" %>
 
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="hd.css">
     <style>
+
         /* 본문 영역 스타일 */
         .contents { clear:both; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
@@ -39,8 +40,9 @@
         .img_box li.active .bg_box { z-index:6; }
         .img_box li.item1 .bg_box { background-image: url("/image/main/vs1.jpg"); }
         .img_box li.item2 .bg_box { background-image: url("/image/main/vs2.jpg"); }
-        .img_box li .vs_tit { position:absolute; top:180px; left:100px; z-index:10;
-            font-weight: 300; font-size: 60px; line-height: 1.3; }
+        .img_box li .vs_tit {
+            position:absolute; top: 300px; right: 200px; z-index:10;
+            font-family: KCC-Ganpan; font-weight: 300; font-size: 60px; line-height: 1.3; }
         .img_box li .vs_tit strong { font-weight: 500; }
 
         .img_box li.active { visibility: visible; opacity: 1; }
@@ -63,13 +65,13 @@
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1.75em; }
+        .page_tit { font-family: omyu_pretty; font-size:48px; text-align: center; padding-top:1.75em; }
 
         #page1 { background-color: #f1f2f1;
             background-image:url("./images/bg_social_ptn01.png");
             background-position:15vw 63vh; background-repeat: no-repeat; }
 
-        .pic_lst { clear:both; width: 1200px; margin: 60px auto; }
+        .pic_lst { font-family: omyu_pretty; clear:both; width: 1200px; margin: 60px auto; }
         .pic_lst li { width: 45%; margin-right:26px; height: 400px; float:left;
             background-repeat: no-repeat; background-position:center center;
             filter:brightness(90%); margin-top:30px; transition:0.4s;

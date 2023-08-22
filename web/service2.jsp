@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DUCKEDU::놀이치료</title>
+    <title>DUCKEDU::사업소개:놀이치료</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
 
         .container {
-            width: 800px;
+            width: 1000px;
             display: block;
             align-content: center;
             text-align: center;
@@ -17,24 +17,26 @@
             font-size: 30px;
         }
 
-        .con1 { margin: 50px 0; }
-        .con2 { margin: 50px 0; }
-        .con3 { margin: 50px 0; }
+        .con { margin: 50px 100px; padding: 20px; border-top: 5px solid #eedca2; }
         img { width: 500px; }
         video { display: block;
             width: 500px;
             margin: 0 auto;}
 
-        tit { font-size: 20px; }
+        .tit { font-size: 30px; }
 
-        text {
+        .text {
             font-size: 20px;
             line-height: 180%;
         }
-        text2 {
+        .text2 {
             text-align: left;
-            font-size: 20px;
-            line-height: 180%; }
+            padding-left: 120px; }
+
+        h2 { font-family: KCC-Ganpan; }
+        .container { font-family: omyu_pretty; }
+
+        p { font-size: 20px; }
 
     </style>
 </head>
@@ -45,13 +47,15 @@
     </header>
     <div  class="contents" id="contents">
         <div class="sub">
-            <h2>덕에듀 서비스</h2>
+            <h2>사업소개</h2>
         </div>
         <div class="breadcrumb">
-            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/sample.jsp"> 서비스 </a> &gt; <span> 놀이치료 </span></p>
+            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/sample.jsp"> 사업소개 </a> &gt; <span> 놀이치료 </span></p>
         </div>
         <section class="page" id="page1">
-
+            <div class="page_wrap">
+                <h2 class="page_tit">놀이치료</h2>
+            </div>
 
             <div class="container">
                 <h3>놀이치료가 무엇인가요?</h3>
@@ -62,20 +66,15 @@
                         <source src="/image/vedio/play.webm" type="video/webm">
                     </video>
                 </div>
-                <div class="intro">
-                    <h1 class="tit">덕에듀만의 놀이치료</h1>
+                <div class="con">
+                    <h3 class="tit">덕에듀만의 놀이치료</h3>
                     <p class="text">놀이와 성장을 한 번에, 덕에듀 놀이치료 <br>
                     아이의 입장에서 생각한 방식, 아이가 스트레스 받지 않는 교육<br>
                     덕에듀는 아이가 건강하게 성장할 수 있도록 지원합니다.</p>
                 </div>
-
-
-                    https://youtu.be/5mYG1tZKdLQ
-
-
-                    <div class="con1">
+                    <div class="con">
                         <img src="/image/sub/img_block2.png" alt="덕에듀 놀이치료">
-                        <h2 class="tit">“놀이”는 아이의 성장에 있어서 중요한 요소입니다. </h2>
+                        <h3 class="tit">“놀이”는 아이의 성장에 있어서 중요한 요소입니다. </h3>
                         <p class="text">특히 언어로 다 표현하지 못한 자신의생각과 마음을 놀이로 표현할 수 있기 때문에
                             놀이는 아이들의 “언어”라고 할 수 있습니다. 놀이를 통하여 즐거움을 경험하고,
                             제한에서 벗어나 다양한 시도와 경험을 해볼 수 있습니다.
@@ -83,9 +82,9 @@
                             정서적 안정과 카타르시스를 놀이 속에서 경험할 수 있습니다.</p>
                     </div>
 
-                    <div class="con2">
+                    <div class="con">
                         <img src="/image/sub/img_duck2.jpg" alt="덕에듀 놀이치료">
-                        <h2 class="tit">놀이치료가 필요한 대상</h2>
+                        <h3 class="tit">놀이치료가 필요한 대상</h3>
                         <h3>우리아이도 놀이치료가 필요한가요?</h3>
                         <p class="text2">
                             ✔ 가정의 불화 혹은 부모와의 애착의 문제가 있는 아동 <br>
@@ -98,7 +97,7 @@
                             ✔ 또래집단과 놀이의 경험 부족으로 인하여 사회성발달에 어려움이 있는 아동 <br></p>
                     </div>
 
-                    <div class="con3">
+                    <div class="con">
                         <img src="image/sub/img_kids.jpg" alt="덕에듀 놀이치료">
                         <h2 class="tit">놀이치료 효과</h2>
                         <p class="text">대상과의 관계형성을 촉진하는 놀이 활동을 통하여 새로운 관계에서 어려움을 극복하는 방법을 배웁니다.

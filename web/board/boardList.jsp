@@ -67,7 +67,7 @@
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
+        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:black;
             padding-bottom: 2.4rem; }
 
         .breadcrumb { clear:both;
@@ -96,6 +96,7 @@
             line-height: 48px; background-color: #333; color:#fff; font-size: 18px; }
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
+
     </style>
 
     <link rel="stylesheet" href="../ft.css">
@@ -119,11 +120,12 @@
     </header>
     <div  class="contents" id="contents">
         <div class="sub">
-            <h2>후원안내</h2>
+            <h2>커뮤니티</h2>
         </div>
         <div class="breadcrumb">
             <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/company01.jsp"> 공지사항 </a> < <span> 리스트 </span></p>
         </div>
+
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">공지사항 목록</h2>

@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=sel %> 등록하기</title>
     <%@ include file="../head.jsp" %>
+    <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
 

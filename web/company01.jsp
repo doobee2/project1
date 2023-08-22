@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
 
-        @font-face {
-            font-family: 'HakgyoansimWoojuR';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
+        .int_img { width: 300px;
+            display: block;
+            margin: 50px auto;  }
 
+        .page .intro .intro_con {
+            font-family: omyu_pretty;
+            font-size: 20px;
+            text-align: center;
+            width: 800px;
+            height: 300px;
+            display: block;
+            margin: 50px auto;
+            line-height: 180%; }
 
-        @font-face {
-            font-family: 'SBAggroB';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
+        h2 { font-family: KCC-Ganpan; }
 
-
-        .page .intro .intro_tit { font-family: SBAggroB; font-size: 50px; display: block; width: 800px; margin: 50px auto; letter-spacing:-0.048em; }
-        .page .intro .intro_con { font-family: HakgyoansimWoojuR; font-size: 20px; display: block; width: 800px; height: 300px; margin: 50px auto;  }
     </style>
 
 </head>
@@ -45,12 +43,14 @@
                 <h2 class="page_tit">인사말</h2>
             </div>
             <div class="intro">
-                <h3 class="intro_tit"><img src="/image/sub/icon1.png" alt="별">Grow & Joy</h3>
-                <p class="intro_con">교육브랜드 Duck Edu는
-                    학생의 성장을 돕고 즐거움과 기쁨을 선사합니다. <br><br>
-
-                성장 (Grow) : "그로우"는 성장과 발전을 의미합니다. 그로우앤조이는 학생들이 더 나은 사람으로 성장하도록 돕고, 동시에 지속적인 발전과 성장을 추구합니다.<br><br>
-                즐거움 (Joy) : 교육 과정에서 즐거움과 기쁨을 경험하는 것 또한 중요합니다. 그로우앤조이는 학생들이 학습을 통해 새로운 경험과 지식을 얻는 동시에 즐거움을 느끼는 것을 강조합니다.<br>
+                <img src="/image/sub/bigduck.png" class="int_img">
+                <div class="intro_con">
+                교육브랜드 Duck Edu '덕'에 아이들이 바르게 성장하고, 즐거운 학습을 하길 바랍니다. <br>
+                우리는 혁신적이고 포용적인 교육을 통해 어린이들의 개별 잠재력을 최대한 끌어올리고,<br>
+                긍정적인 학습 경험을 제공하여 지속적인 성장과 발전을 촉진하며, <br>
+                사회적, 감정적, 지적 영역에서 강한 기반을 구축하는 데 헌신하고 있습니다.<br>
+                함께 어린이들을 세계적인 시민으로 키워내는 길을 개척하겠습니다.<br>
+                </div>
             </div>
 
         </section>
