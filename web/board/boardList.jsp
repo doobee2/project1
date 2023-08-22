@@ -76,19 +76,23 @@
         .breadcrumb a { color:#fff; }
         .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
-        .tb1 { font-family: omyu_pretty; width:1000px; margin:50px auto; font-size: 20px; }
+        .tb1 { width:1000px; margin:50px auto; font-family: omyu_pretty; font-size: 20px;}
         .tb1 th {
             line-height: 32px;
             padding-top: 8px;
             padding-bottom: 8px;
-            border-top: 3px solid #62f6f6;
-            background-color: #bff5f5;
+            border-bottom: 3px solid #fdd141;
+            border-top: 3px solid #fdd141;
+            background-color: #fff1cc;
             font-weight: bolder;
         }
-
-        .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top: 3px solid #62f6f6;
-            padding-left: 14px; }
+        .tb1 td {
+            line-height: 32px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-top: 3px solid #fdd141;
+            border-bottom: 3px solid #fdd141;
+        }
 
         .tb1 .item1 { width:10%; text-align: center; }
         .tb1 .item2 { width:65%; }
@@ -100,6 +104,8 @@
         .inbtn { display:block;  border-radius:100px;
             min-width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
             line-height: 48px; background-color: #333; color:#fff; font-size: 18px; }
+        .inbtn:hover {
+            font-size: 20px;
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
 
@@ -110,7 +116,7 @@
 
     .btn_group { clear:both; width:1000px; margin:20px auto; }
     .btn_group:after { content:""; display:block; width:100%; clear: both; }
-    .btn_group p {text-align: center;   line-height:3.6; }
+
 
     </style>
 
@@ -131,7 +137,7 @@
             <h2>커뮤니티</h2>
         </div>
         <div class="breadcrumb">
-            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/company01.jsp"> 공지사항 </a> < <span> 리스트 </span></p>
+            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/board/boardList.jsp"> 공지사항 </a> < <span> 리스트 </span></p>
         </div>
 
         <section class="page" id="page1">
@@ -184,8 +190,8 @@
                     <% if(sid!=null && sid.equals("admin")) { %>
                     <a href="/board/addBoard.jsp" class="inbtn">글쓰기</a>
                     <% } else { %>
-                    <p>관리자만 공지사항의 글을 쓸 수 있습니다.<br>
-                    로그인한 사용자만 글의 상세내용을 볼 수 있습니다.</p>
+                    <p> 로그인 한 회원만 공지 내용을 보실 수 있습니다.<br>
+                    로그인을 해주세요!</p>
                     <% } %>
                 </div>
             </div>

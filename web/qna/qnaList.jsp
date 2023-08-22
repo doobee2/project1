@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
-<%-- 1. 필요한 라이브러리 임포트 --%>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.util.Date" %>
@@ -8,19 +7,16 @@
 <%@ page import="com.duckedu.vo.*" %>
 <%@ include file="../encoding.jsp" %>
 <%
-    //2. DB 연결
     Connection conn = null;
     PreparedStatement pstmt = null;
     ResultSet rs = null;
     DBC con = new MariaDBCon();
     conn = con.connect();
 
-    //3. SQL을 실행하여 결과셋(ResultSet) 받아오기
     String sql = "SELECT a.qno AS qno, a.title AS title, a.content AS content, a.author AS author, a.resdate AS resdate, a.cnt as cnt, a.lev AS lev, a.par AS par, b.name AS name FROM qna a, member b WHERE a.author=b.id order BY a.par DESC, a.lev ASC, a.qno ASC";
     pstmt = conn.prepareStatement(sql);
     rs = pstmt.executeQuery();
 
-    //4. 받아온 결과셋(ResultSet) 을 질문및답변 목록(qnaList)에 불러와 하나의 레코드씩 담기
     List<Qna> qnaList = new ArrayList<>();
     while(rs.next()){
         Qna qna = new Qna();
@@ -40,20 +36,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DUCKEDU::서비스</title>
+    <title>DUCKEDU::커뮤니티</title>
     <%@ include file="../head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-
     <!-- 필요한 폰트를 로딩 : 구글 웹 폰트에서 폰트를 선택하여 해당 내용을 붙여 넣기 -->
     <link rel="stylesheet" href="../google.css">
     <link rel="stylesheet" href="../fonts.css">
-
     <!-- 필요한 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="../common.css">
@@ -104,8 +96,6 @@
             line-height: 48px; background-color: #333; color:#fff; font-size: 18px; }
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
-
-
     </style>
     <link rel="stylesheet" href="../ft.css">
     <style>
@@ -130,12 +120,12 @@
                     <h2>커뮤니티</h2>
                 </div>
                 <div class="breadcrumb">
-                    <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/company01.jsp"> 커뮤니티 </a> < <span> 공지사항 </span></p>
+                    <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/board/boardList.jsp"> 커뮤니티 </a> < <span> 공지사항 </span></p>
                 </div>
 
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">멘토링</h2>
+                <h2 class="page_tit">멘토링 신청</h2>
                 <br><br><hr><br><br>
                 <table class="tb1" id="myTable">
                     <thead>
@@ -168,13 +158,13 @@
                             tot--;
                         }
                     %>
-                    <tr><td colspan="4">등록된 문의가 없습니다.</td></tr>
+                    <tr><td colspan="4">로그인 한 회원만 신청이 가능합니다.</td></tr>
 
                     </tbody>
                 </table>
                 <% if(sid != null) { %>
                 <div class="btn_group">
-                    <a href="addQuestion.jsp" class="inBtn inBtn1">문의하기</a>
+                    <a href="/qna/addQuestion.jsp" class="inBtn inBtn1">신청하기</a>
                 </div>
                 <% } %>
             </div>

@@ -9,7 +9,8 @@
     <%@ include file="../head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
-        .join > table {width:800px;margin:0 auto}
+
+        .join > table {width:700px; margin:0 auto}
         .join > table tr {height:24px;}
         .join > table th, .join > table td {font-size:16px;padding:12px 0;text-align:left;height:76px;box-sizing:border-box;vertical-align:top;}
         .join > table th {padding-top:28px;font-size:18px;}
@@ -93,8 +94,9 @@
                         </table>
 
                         <div class="btn_area" style="text-align:center;">
-                            <a href="/" class="inBtn inBtn1">취소하기</a>
-                            <input type="submit" value="제출하기" class="inBtn inBtn2">
+                            <input type="submit" value="가입하기" class="inBtn inBtn2">
+                            <a href="/" class="inBtn inBtn1">돌아가기</a>
+
                         </div>
                     </div>
                 </form>

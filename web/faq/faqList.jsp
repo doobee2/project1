@@ -128,7 +128,7 @@
             <h2>커뮤니티</h2>
         </div>
         <div class="breadcrumb">
-            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/company01.jsp"> 커뮤니티 </a> < <span> 자주하는질문 </span></p>
+            <p><a href="/"> HOME </a> &gt; <a href="<%=headerPath%>/board/boardList.jsp"> 커뮤니티 </a> < <span> 자주하는질문 </span></p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">

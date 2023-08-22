@@ -38,20 +38,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>질문 및 답변 글 상세보기</title>
+    <title>DUCKEDU::커뮤니티</title>
     <%@ include file="../head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-
     <!-- 필요한 폰트를 로딩 : 구글 웹 폰트에서 폰트를 선택하여 해당 내용을 붙여 넣기 -->
     <link rel="stylesheet" href="../google.css">
     <link rel="stylesheet" href="../fonts.css">
-
     <!-- 필요한 플러그인 연결 -->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="../common.css">
@@ -67,7 +63,7 @@
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:#fff;
+        .page_tit { font-family: KCC-Ganpan; font-size:48px; text-align: center; padding-top:1em;
             padding-bottom: 2.4rem; }
 
         .breadcrumb { clear:both;
@@ -76,14 +72,21 @@
         .breadcrumb a { color:#fff; }
         .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
-        .tb1 { width:800px; margin:50px auto; }
-        .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #333; border-bottom:1px solid #333;
-            background-color:deepskyblue; color:#fff; }
-        .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-bottom:1px solid #333;
-            padding-left: 14px; border-top:1px solid #333; }
-
+        .tb1 { width:1000px; margin:50px auto; font-family: omyu_pretty; font-size: 20px;}
+        .tb1 th {
+            line-height: 32px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-top: 3px solid #fdd141;
+            background-color: #fff1cc;
+            font-weight: bolder;
+        }
+        .tb1 td {
+            line-height: 32px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-top: 3px solid #fdd141;
+        }
         .indata { display:inline-block; width:300px; height: 48px; line-height: 48px;
             text-indent:14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
@@ -92,7 +95,6 @@
             float:left; margin-right: 20px; }
         .inbtn:last-child { float:right; }
     </style>
-
     <link rel="stylesheet" href="../ft.css">
     <style>
 

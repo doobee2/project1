@@ -86,10 +86,13 @@ INSERT INTO faq(title,question,answer) VALUES ('(질문)', '후원은 어떻게 
 후원은 홈페이지 내 [후원] 메뉴로 들어가 폼을 작성해주시면, 담당자가 연락을 드립니다. <br>
 덕에듀는 취약계층 아동을 대상으로 지원 및 후원을 하고 있으니 많은 사랑과 관심 부탁드립니다.');
 
--- faq 뷰
-CREATE VIEW faqlist AS (select a.fno as fno, a.title as title, a.question as question, a.answer as answer, 
-a.author as author, a.cnt as cnt, b.name as name from fno a, 
-member b where a.author = b.id order by a.fno ASC);
+-- faq 뷰CREATE VIEW faqlist AS (
+SELECT a.fno AS fno, a.title AS title, a.question AS question, a.answer AS answer, 
+a.author AS author, a.cnt AS cnt, b.name AS name
+FROM fno a, 
+member b
+WHERE a.author = b.id
+ORDER BY a.fno ASC);
 
 
 DESC faq;

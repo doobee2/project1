@@ -35,15 +35,17 @@ p {word-break:keep-all;line-height:1.2;font-size:18px;}
 .tb2 th {width:30%;padding-top:24px;vertical-align:top;}
 .tb2 td {padding-left:15px;}
 
-.btn_group {margin:20px 0 0;text-align:right;}
+.btn_group { font-family: omyu_pretty; margin:20px 0 0; text-align:right;}
 .inBtn {display:inline-block;border-radius:50px;min-width:140px;text-align:center;padding:0 24px;line-height:40px;color:#fff;font-size:18px;border:none;margin-left:10px;cursor:pointer;}
 .inBtn:first-child{margin-left:0;}
-.inBtn:hover, .inBtn:active {box-shadow:2px 2px 5px #333;}
+.inBtn:hover, .inBtn:active { transform: scale(1.2); }
+
+
 .inBtn1 {background-color:var(--main-color);}
 .inBtn2 {background-color:var(--sub-color);}
 
 .inData {display:inline-block;width:calc(100% - 15px);height:48px;line-height:48px;text-indent:14px;font-size:18px;}
-textarea.inData {min-height:150px;}
+textarea.inData {min-height:180%;}
 
 .ul_type01 li {position:relative;padding-left:10px;color:#333;line-height:1.8;font-size:15px;}
 .ul_type01 li:before {position:absolute;content:"";display:block;background:#333;width:5px;height:1px;top:50%;margin-top:-0.5px;left:0;}

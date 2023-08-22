@@ -34,10 +34,9 @@
                 </ul>
             </li>
             <li class="item4">
-                <a href="<%=headerPath %>/donate.jsp" class="dp1">후원봉사</a>
+                <a href="<%=headerPath %>/donate.jsp" class="dp1">나눔의손길</a>
                 <ul class="sub">
                     <li><a href="<%=headerPath %>/donate.jsp">후원문의</a></li>
-                    <li><a href="<%=headerPath %>/donate.jsp">봉사신청</a></li>
                 </ul>
             </li>
         </ul>

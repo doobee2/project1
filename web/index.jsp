@@ -1,9 +1,67 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
-<%@ page import="com.duckedu.db.*" %>
 <%@ page import="com.duckedu.vo.*" %>
+<%@ page import="com.duckedu.db.*" %>
 <%@ page import="com.duckedu.dto.*" %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.duckedu.dto.Board" %>
+
+<%
+    Connection conn = null;
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;
+    String sql = "";
+
+    DBC con = new MariaDBCon();
+    conn = con.connect();
+
+    //공지사항 불러오기
+    List<Board> boardList = new ArrayList<>();
+    try {
+        String sql = "select * from board order by bno desc";
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setInt(1, 2);
+        rs = pstmt.executeQuery();
+        while(rs.next()){
+            Board bd = new Board();
+            bd.setBno(rs.getInt("bno"));
+            bd.setTitle(rs.getString("title"));
+            bd.setContent(rs.getString("content"));
+            bd.setAuthor(rs.getString("author"));
+            bd.setResdate(rs.getString("resdate"));
+            bd.setCnt(rs.getInt("cnt"));
+            boardList.add(bd);
+        }
+    } catch (SQLException e) {
+        System.out.println("자유게시판 글 불러오기 SQL 문 오류");
+    }
+
+    //멘토링게시판(qna) 불러오기
+    List<Qna> qnaList = new ArrayList<>();
+    try {
+        sql = "SELECT a.qno AS qno, a.title AS title, a.content AS content, a.author AS author, a.resdate AS resdate, a.cnt as cnt, a.lev AS lev, a.par AS par, b.name AS name FROM qna a, member b WHERE a.author=b.id order BY a.par DESC, a.lev ASC, a.qno ASC4";
+        pstmt = conn.prepareStatement(sql);
+        pstmt.setInt(1, 2);
+        rs = pstmt.executeQuery();
+        while(rs.next()){
+        Qna qna = new Qna();
+        qna.setQno(rs.getInt("qno"));
+        qna.setTitle(rs.getString("title"));
+        qna.setContent(rs.getString("content"));
+        qna.setAuthor(rs.getString("author"));
+        qna.setResdate(rs.getString("resdate"));
+        qna.setCnt(rs.getInt("cnt"));
+        qna.setLev(rs.getInt("lev"));
+        qna.setPar(rs.getInt("par"));
+        qna.setName(rs.getString("name"));
+        qnaList.add(qna);
+        }
+    } catch (SQLException e) {
+    System.out.println("자유게시판 글 불러오기 SQL 문 오류");
+    }
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +87,7 @@
         /* 본문 영역 스타일 */
         .contents { clear:both; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
-        .vs { clear:both; width:100%; min-height:600px; background-color: deeppink;
-            position:relative; overflow:hidden; }
+        .vs { clear:both; width:100%; min-height:600px; position:relative; overflow:hidden; }
         .img_box { position:relative; width: 100%; height:600px; overflow:hidden; }
         .img_box li { visibility:hidden; opacity:0;  transition-duration:0.7s;
             transition-delay:0.1s;    width:100%; height:600px;  }
@@ -199,6 +256,66 @@
             </div>
         </section>
 
+
+        <section class="page" id="page1">
+            <div class="page_wrap">
+                <h2 class="page_tit"><span class="txtColor1">Duck</span><span class="txtColor2">Edu</span></h2>
+                <ul class="board_lst">
+                    <li class="item1">
+                        <div class="board_tit">
+                            <h3>공지사항</h3>
+                            <a href="<%=headerPath%>/board/boardList.jsp" class="btn_more">+</a>
+                        </div>
+                        <ul class="board_con">
+                            <%
+                                if(boardList.size() > 0){
+                                    for(Board bd : boardList) {
+                                        String dateStr = bd.getResdate().substring(0, 10);
+                                        String title = "";
+                                        if(bd.getTitle().length() > 70) {
+                                            title = bd.getTitle().substring(69) + "...";
+                                        } else {
+                                            title = bd.getTitle();
+                                        }
+
+                            %>
+                            <li><a href="<%=headerPath %>/board/getBoard.jsp?bno=<%=bd.getBno() %>"><%=title %><span class="date"><%=dateStr %></span></a></li>
+                            <% } } else { %>
+                            <li class="no_date">
+                                등록된 공지사항이 없습니다.
+                            </li>
+                            <% } %>
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <div class="board_tit">
+                            <h3>멘토링 신청</h3>
+                            <a href="<%=headerPath%>/qna/qnaList.jsp" class="btn_more">+</a>
+                        </div>
+                        <ul class="board_con">
+                            <%
+                                if(qnaList.size() > 0){
+                                    for(Qna qna : qnaList) {
+                                        String dateStr = qna.getResdate().substring(0, 10);
+                                        String title = "";
+                                        if(qna.getTitle().length() > 70) {
+                                            title = qna.getTitle().substring(69) + "...";
+                                        } else {
+                                            title = qna.getTitle();
+                                        }
+
+                            %>
+                            <li><a href="<%=headerPath%>/qna/qnaList.jsp?bno=<%=qna.getQno() %>"><%=title %><span class="date"><%=dateStr %></span></a></li>
+                            <% } } else { %>
+                            <li class="no_date">
+                                등록된 신청글이 없습니다.
+                            </li>
+                            <% } %>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
 
         <script>

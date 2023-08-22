@@ -1,14 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
-<%-- 1. 필요한 라이브러리 불러오기 --%>
 <%@ page import="java.sql.*" %>
-<%@ page import="com.chunjae.db.*" %>
-<%@ page import="com.chunjae.vo.*" %>
-<%-- 2. 인코딩 및 보내온 데이터 받기 --%>
+<%@ page import="com.duckedu.db.*" %>
+<%@ page import="com.duckedu.vo.*" %>
 <%@ include file="/encoding.jsp" %>
 <%
     int qno = Integer.parseInt(request.getParameter("qno"));
 
-    //3. DB연결
     Connection conn = null;
     PreparedStatement pstmt = null;
     ResultSet rs = null;
@@ -30,9 +27,9 @@
         qna.setAuthor(rs.getString("author"));
         qna.setResdate(rs.getString("resdate"));
         qna.setCnt(rs.getInt("cnt"));
-        qna.setName(rs.getString("name"));
         qna.setLev(rs.getInt("lev"));
         qna.setPar(rs.getInt("par"));
+        qna.setName(rs.getString("name"));
     }
 
     String sel = "";
