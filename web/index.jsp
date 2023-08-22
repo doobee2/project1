@@ -111,14 +111,14 @@
                 <li class="item1 active">
                     <input type="radio" name="vs_ra" id="vs_ra1" class="vs_ra" checked>
                     <div class="bg_box"></div>
-                    <h2 class="vs_tit">교육에 대한 끊임없는 도전<br>
-                        <strong>행복한 내일을 함께 합니다</strong></h2>
+                    <h2 class="vs_tit">놀면서 배우는 Duck Edu,<br>
+                        <strong>즐거운 학습을 시작해보세요!</strong></h2>
                 </li>
                 <li class="item2">
                     <input type="radio" name="vs_ra" id="vs_ra2" class="vs_ra">
                     <div class="bg_box"></div>
-                    <h2 class="vs_tit">“나눔의 힘! 실천의 힘!”<br>
-                        <strong>작은 따뜻함으로 세상을 <br>바꿉니다</strong>
+                    <h2 class="vs_tit">"어린 마음, 큰 꿈, 함께 성장!"<br>
+                        <strong>모든 아이들의 꿈을 응원합니다.</strong>
                     </h2>
                 </li>
             </ul>

@@ -67,7 +67,7 @@
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:1em; color:black;
+        .page_tit { font-family: KCC-Ganpan; font-size:48px; text-align: center; padding-top:1em; color:black;
             padding-bottom: 2.4rem; }
 
         .breadcrumb { clear:both;
@@ -76,13 +76,19 @@
         .breadcrumb a { color:#fff; }
         .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
-        .tb1 { width:800px; margin:50px auto; }
-        .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #333; border-bottom:1px solid #333;
-            background-color:deepskyblue; color:#fff; }
+        .tb1 { font-family: omyu_pretty; width:1000px; margin:50px auto; font-size: 20px; }
+        .tb1 th {
+            line-height: 32px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-top: 3px solid #62f6f6;
+            background-color: #bff5f5;
+            font-weight: bolder;
+        }
+
         .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-bottom:1px solid #333;
-            padding-left: 14px; border-top:1px solid #333; }
+            border-top: 3px solid #62f6f6;
+            padding-left: 14px; }
 
         .tb1 .item1 { width:10%; text-align: center; }
         .tb1 .item2 { width:65%; }
@@ -101,9 +107,11 @@
 
     <link rel="stylesheet" href="../ft.css">
     <style>
-    .btn_group { clear:both; width:800px; margin:20px auto; }
+
+    .btn_group { clear:both; width:1000px; margin:20px auto; }
     .btn_group:after { content:""; display:block; width:100%; clear: both; }
     .btn_group p {text-align: center;   line-height:3.6; }
+
     </style>
 
     <link rel="stylesheet" href="../jquery.dataTables.css">
@@ -128,7 +136,7 @@
 
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">공지사항 목록</h2>
+                <h2 class="page_tit">공지사항</h2>
                 <br><br><hr><br><br>
                 <table class="tb1" id="myTable">
                     <thead>

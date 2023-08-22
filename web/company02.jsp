@@ -65,8 +65,9 @@
             <div class="title">2024</div>
             <div class="text-box-content">
                 <div class="content">
-                    01.02. 2024 올해의 브랜드 최우수상 수상 <br>
                     02.21. SAMSAM 장학생 취업 연계 협약 <br>
+                    01.02. 2024 올해의 브랜드 최우수상 수상 <br>
+
                 </div>
             </div>
         </div>

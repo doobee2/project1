@@ -50,6 +50,7 @@
         h2 { font-family: KCC-Ganpan; }
         .container { font-family: omyu_pretty; }
         .text { text-align: center; font-size: 24px; }
+
     </style>
 </head>
 <body>
