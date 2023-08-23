@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>그로우앤조이::오시는길</title>
+    <title>DUCKEDU::오시는길</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
@@ -13,13 +13,17 @@
             margin:20px auto !important;
             overflow:hidden;
             }
-        .text {
-            vertical-align: top;
-        }
-        .maparea { width: 1000px;}
-        .mapbox { width: 1000px; display: flex; }
-        .page_wrap {}
-        .mapp a img {margin-left: 20px; float:left; width: 50px; height: 50px;}
+        .maptext p {font-size: 24px;
+            font-family: omyu_pretty;}
+        .mapbox {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            }
+        .mapp img { margin: 20px auto; width: 50px; height: 50px; display: inline-block}
+        .mapp a { margin: 10px}
+        h2 { font-family: KCC-Ganpan; }
+        h3 { font-size: 30px; font-family: KCC-Ganpan; }
     </style>
 
     <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
@@ -42,7 +46,7 @@
             <div class="page_wrap">
                 <h2 class="page_tit">오시는길</h2>
                 <div class="maparea">
-                    <div id="map" style="margin-left:120px;	margin-top:50px; width:800px;height:600px; background:white; "></div>
+                    <div id="map" style="margin-left:140px;	margin-top:50px; width:800px;height:600px; background:#fdd141; text-align: center;"></div>
                     <script>
                         var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                             mapOption = {
@@ -58,7 +62,7 @@
                         });
                         // 마커가 지도 위에 표시되도록 설정합니다
                         marker.setMap(map);
-                        var iwContent = '<div style="padding:5px;">마리오아울렛2관<br><a href="" style="color:blue;" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                        var iwContent = '<div style="padding:5px 29px; background-color: #fdd141; font-size: 20px; font-weight: bold;">Duck Edu<br><a href="" style="color:blue;" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
                             iwPosition = new daum.maps.LatLng(37.4786713,126.8864968); //인포윈도우 표시 위치입니다
                         // 인포윈도우를 생성합니다
                         var infowindow = new daum.maps.InfoWindow({
@@ -78,8 +82,8 @@
                     </script>
                 </div>
                 <div class="mapbox">
-                <div class="text">
-                    <h2>DUCK EDU는 언제나 여러분을 환영합니다.</h2>
+                <div class="maptext">
+                    <h3>DUCK EDU는 언제나 여러분을 환영합니다.</h3>
                     <p>서울 금천구 벚꽃로 309</p>
                     <p>tel : 02-1004-1004</p>
                 </div>

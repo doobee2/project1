@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>그로우앤조이::이메일무단수집거부</title>
+    <title>DUCKEDU::이메일무단수집거부</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
 </head>
@@ -13,7 +13,7 @@
     </header>
     <div  class="contents" id="contents">
         <div class="sub">
-            <h2>조이서비스</h2>
+            <h2>DUCKEDU</h2>
         </div>
         <div class="breadcrumb">
             <p><a href="/"> HOME </a> &gt; <span> 이메일무단수집거부 </span></p>
@@ -21,7 +21,7 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">이메일 무단 수집 거부</h2>
-                <h3>그로우앤조이의 이메일무단수집 거부방침을 알려드립니다.</h3>
+                <h3>DUCKEDU 이메일무단수집 거부방침을 알려드립니다.</h3>
                 <section>
                     <div class="privacyArea">
                         <p>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>그로우앤조이::연혁</title>
+    <title>DUCKEDU::연혁</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>

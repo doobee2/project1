@@ -26,7 +26,7 @@
 <div class="ft_wrap2">
     <p class="copyright">
         <span>DUCK EDU</span>
-        <span>서울시 금천구 가산로9길 54</span>
+        <span>서울 금천구 벚꽃로 309</span>
         <span>대표자 이슬비</span>
         <span>사업자등록번호 XXX-XX-XXXXX</span>
         <span>통신판매신고번호 제XX-XXX호</span>

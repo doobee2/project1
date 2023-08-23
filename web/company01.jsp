@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>덕에듀::인사말</title>
+    <title>DUCKEDU::인사말</title>
     <%@ include file="head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>

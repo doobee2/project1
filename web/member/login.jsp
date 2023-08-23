@@ -6,16 +6,15 @@
     <%@ include file="../head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
-        .tb1 { width:500px; margin:0 auto; }
+        .tb1 { width:500px; margin:0 auto; font-family: omyu_pretty;}
         .tb1 td { width:500px; line-height: 48px; padding-top:24px; }
 
         .indata { display:inline-block; width: 500px; height: 48px; line-height: 48px;
             text-indent:14px; font-size:18px; }
 
-        .login_area {width:500px;background-color:#efefee;border-radius:10px;margin:0 auto;padding:20px;}
-
+        .login_area {width:500px;border: 4px solid #fdd141; border-radius:10px;margin:0 auto;padding:20px;}
         .btn_group {text-align:center;}
-
+        h2 { font-family: KCC-Ganpan; }
     </style>
 </head>
 <body>

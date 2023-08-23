@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="<%=headPath%>/css/sub.css">
     <style>
 
-        .join > table {width:700px; margin:0 auto}
+        .join > table {width:700px; margin:0 auto; font-family: omyu_pretty;}
         .join > table tr {height:24px;}
         .join > table th, .join > table td {font-size:16px;padding:12px 0;text-align:left;height:76px;box-sizing:border-box;vertical-align:top;}
+        .join > table th {padding-top:28px;font-size:18px;}
         .join > table th {padding-top:28px;font-size:18px;}
         .join > table td {padding-left:14px;}
         .join > table td > input {display:inline-block;width:calc(100% - 4px);height:48px;line-height:48px;text-indent:16px;font-size:18px;}
@@ -32,6 +33,9 @@
         .term ul li p .essential{color:#ed3535;}
         .term ul li a{position:relative; font-size:14px; color:#97999b;}
         .term ul li a:before{content:""; display:inline-block; position:absolute; bottom:-1px; left:0; width:100%; border-bottom:1px solid #97999b;}
+
+
+        h2 { font-family: KCC-Ganpan; }
 
         .inBtn.center{display:block;margin:10px auto 0;width:80%;background-color:var(--third-color);}
     </style>
