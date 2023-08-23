@@ -4,7 +4,7 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.*" %>
 <%@ page import="com.duckedu.db.*" %>
-<%@ page import="com.duckedu.dto.*" %>
+<%@ page import="com.duckedu.vo.*" %>
 <%@ include file="../encoding.jsp" %>
 <%
     //2. DB 연결
@@ -14,12 +14,10 @@
     DBC con = new MariaDBCon();
     conn = con.connect();
 
-    //3. SQL을 실행하여 결과셋(ResultSet) 받아오기
-    String sql = "select a.qno as qno, a.title AS title, a.content AS content, a.author AS author, a.resdate AS resdate, a.cnt as cnt, a.lev AS lev, a.par AS par, secret AS secret, b.name as name from qna a, member b where a.author = b.id order by a.qno ASC;";
+    String sql = "SELECT a.qno AS qno, a.title AS title, a.content AS content, a.author AS author, a.resdate AS resdate, a.cnt as cnt, a.lev AS lev, a.par AS par, b.name AS name FROM qna a, member b WHERE a.author=b.id order BY a.par DESC, a.lev ASC, a.qno ASC";
     pstmt = conn.prepareStatement(sql);
     rs = pstmt.executeQuery();
 
-    //4. 받아온 결과셋(ResultSet) 을 질문및답변 목록(qnaList)에 불러와 하나의 레코드씩 담기
     List<Qna> qnaList = new ArrayList<>();
     while(rs.next()){
         Qna qna = new Qna();
@@ -31,7 +29,7 @@
         qna.setCnt(rs.getInt("cnt"));
         qna.setLev(rs.getInt("lev"));
         qna.setPar(rs.getInt("par"));
-        qna.setSecret(rs.getBoolean("secret"));
+        qna.setName(rs.getString("name"));
         qnaList.add(qna);
     }
     con.close(rs, pstmt, conn);

@@ -45,7 +45,7 @@ p {word-break:keep-all;line-height:1.2;font-size:18px;}
 .inBtn2 {background-color:var(--sub-color);}
 
 .inData {display:inline-block;width:calc(100% - 15px);height:48px;line-height:48px;text-indent:14px;font-size:18px;}
-textarea.inData {min-height:180%;}
+textarea.inData {min-height:180%;height: 250px;}
 
 .ul_type01 li {position:relative;padding-left:10px;color:#333;line-height:1.8;font-size:15px;}
 .ul_type01 li:before {position:absolute;content:"";display:block;background:#333;width:5px;height:1px;top:50%;margin-top:-0.5px;left:0;}

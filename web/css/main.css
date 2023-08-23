@@ -25,19 +25,20 @@
 .play_btn:after { content:"| |"; }
 .play_btn.active:after { content:"▶"; }
 
-.page { clear:both; width: 100vw; height:auto; position:relative; }
+.page { clear:both; width: 100vw; height: auto; position:relative; }
 .page::after { content:""; display:block; width: 100%; clear:both; }
 
 .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
 .page_tit { font-size:48px; text-align: center; padding-top:1.75em; }
 
-#page1 {background-color:#f1f2f1;height:unset;}
+#page1 {background-image:url("../image/sub/bg_text.png");
+    background-position:15vw 63vh; background-repeat: no-repeat;}
 #page1 .page_tit {font-weight:600;}
 #page1 .page_tit .txtColor1 {color:var(--main-color);}
 #page1 .page_tit .txtColor2 {color:var(--sub-color);}
 .board_lst {margin-top:50px;}
-.board_lst > li {display:inline-block;vertical-align:middle;width:calc(50% - 12px);margin-left:20px;}
-.board_lst > li:first-child {margin-left:0;}
+.board_lst > li {display:inline-block;vertical-align:middle;width:calc(50% - 12px);margin-left:300px;}
+.board_lst > li:first-child {margin-left:300px;}
 .board_tit {position:relative;border-bottom:3px dashed #333;}
 .board_tit h3 {font-size:35px;font-weight:700;color:#333;padding-bottom:10px;}
 .board_tit .btn_more {position:absolute;font-size:12px;width:16px;height:16px;right:5px;top:50%;margin-top:-12px;background-color:#333;border-radius:10px;color:#fff;font-weight:500;text-align:center;line-height:16px;}

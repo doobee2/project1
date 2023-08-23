@@ -38,7 +38,7 @@
                                 <label for="content">내용</label>
                             </th>
                             <td>
-                                <textarea name="content" id="content" cols="100" rows="40" maxlength="990" class="inData">
+                                <textarea name="content" id="content" cols="100" rows="100" maxlength="990" class="inData">
 1. 이름 :
  2. 학교/학년 :
  3. 성별 :

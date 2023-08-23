@@ -19,6 +19,9 @@ INSERT INTO MEMBER(id, pw, NAME, email, tel) VALUES('admin', '1234', '관리자'
 INSERT INTO MEMBER(id, pw, NAME, email, tel) VALUES('lee', '1111', '이슬비', 'lee@edu.com', '010-1234-5678');
 
 
+-- 비밀번호...ㅠㅠ
+UPDATE MEMBER SET pw='03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4';
+
 -- 공지사항(board)
 CREATE TABLE board(
 	bno INT PRIMARY KEY AUTO_INCREMENT,
@@ -97,4 +100,9 @@ ORDER BY a.fno ASC);
 
 DESC faq;
 SELECT * FROM faq;
+COMMIT;
+COMMIT;
+COMMIT;
+COMMIT;
+COMMIT;
 COMMIT;

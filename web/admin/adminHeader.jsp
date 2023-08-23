@@ -15,20 +15,22 @@
     }
 %>
 <div class="admin_hd_wrap" id="adminHdWrap">
-    <a href="../index.jsp" class="logo">
-        <img src="../image/common/logo.png" alt="그로우앤조이 로고타입">
-    </a>
+
+        <img src="../image/common/logo_big.png" alt="덕에듀 로고타입" class="adm_logo">
+
     <nav id="adminHdGnb">
-        <h2>관리자페이지</h2>
+        <h2>환영합니다, 관리자님!</h2><br>
+        <h2>덕에듀 관리자 페이지 입니다.</h2><br><br>
         <ul class="menu">
             <li class="item1">
                 <a href="<%=adminPath %>/memberList.jsp" class="dp1">회원 관리</a>
             </li>
             <li class="item2">
-                <a href="<%=adminPath %>/qnaList.jsp" class="dp1">문의 관리</a>
+                <a href="<%=adminPath %>/qnaList.jsp" class="dp1">멘토링 신청 관리</a>
             </li>
+            <br>
             <li class="item3">
-                <a href="<%=adminPath %>/admin_event_list.jsp" class="dp1">이벤트 관리</a>
+                <a href="<%=headPath %>/index.jsp" class="dp1">홈으로</a>
             </li>
         </ul>
     </nav>

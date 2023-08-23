@@ -38,7 +38,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>그로우앤조이::관리자페이지-문의 답변</title>
+    <title>DUCKEDU::관리자페이지-문의 답변</title>
     <%@ include file="../head.jsp" %>
     <link rel="stylesheet" href="<%=headPath%>/css/admin.css">
 </head>

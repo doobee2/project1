@@ -20,7 +20,7 @@
     //공지사항 불러오기
     List<Board> boardList = new ArrayList<>();
     try {
-        String sql = "select * from board order by bno desc";
+        sql = "select * from board order by bno desc";
         pstmt = conn.prepareStatement(sql);
         pstmt.setInt(1, 2);
         rs = pstmt.executeQuery();
@@ -35,32 +35,11 @@
             boardList.add(bd);
         }
     } catch (SQLException e) {
-        System.out.println("자유게시판 글 불러오기 SQL 문 오류");
+        System.out.println("공지사항 SQL 문 오류");
+
     }
 
-    //멘토링게시판(qna) 불러오기
-    List<Qna> qnaList = new ArrayList<>();
-    try {
-        sql = "SELECT a.qno AS qno, a.title AS title, a.content AS content, a.author AS author, a.resdate AS resdate, a.cnt as cnt, a.lev AS lev, a.par AS par, b.name AS name FROM qna a, member b WHERE a.author=b.id order BY a.par DESC, a.lev ASC, a.qno ASC4";
-        pstmt = conn.prepareStatement(sql);
-        pstmt.setInt(1, 2);
-        rs = pstmt.executeQuery();
-        while(rs.next()){
-        Qna qna = new Qna();
-        qna.setQno(rs.getInt("qno"));
-        qna.setTitle(rs.getString("title"));
-        qna.setContent(rs.getString("content"));
-        qna.setAuthor(rs.getString("author"));
-        qna.setResdate(rs.getString("resdate"));
-        qna.setCnt(rs.getInt("cnt"));
-        qna.setLev(rs.getInt("lev"));
-        qna.setPar(rs.getInt("par"));
-        qna.setName(rs.getString("name"));
-        qnaList.add(qna);
-        }
-    } catch (SQLException e) {
-    System.out.println("자유게시판 글 불러오기 SQL 문 오류");
-    }
+
 %>
 
 <!DOCTYPE html>
@@ -82,6 +61,7 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="hd.css">
+    <link rel="stylesheet" href="/css/main.css">
     <style>
 
         /* 본문 영역 스타일 */
@@ -235,7 +215,7 @@
         </script>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">Duck Edu만의 서비스</h2>
+                <h2 class="page_tit"><span class="txtColor1">DuckEdu</span><span class="txtColor2">Service</span></h2>
                 <ul class="pic_lst">
                     <li class="item1">
                         <a href="">
@@ -255,11 +235,9 @@
                 </ul>
             </div>
         </section>
-
-
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit"><span class="txtColor1">Duck</span><span class="txtColor2">Edu</span></h2>
+                <h2 class="page_tit"><span class="txtColor1">DuckEdu</span><span class="txtColor2">Community</span></h2>
                 <ul class="board_lst">
                     <li class="item1">
                         <div class="board_tit">
@@ -277,38 +255,11 @@
                                         } else {
                                             title = bd.getTitle();
                                         }
-
                             %>
                             <li><a href="<%=headerPath %>/board/getBoard.jsp?bno=<%=bd.getBno() %>"><%=title %><span class="date"><%=dateStr %></span></a></li>
                             <% } } else { %>
                             <li class="no_date">
                                 등록된 공지사항이 없습니다.
-                            </li>
-                            <% } %>
-                        </ul>
-                    </li>
-                    <li class="item2">
-                        <div class="board_tit">
-                            <h3>멘토링 신청</h3>
-                            <a href="<%=headerPath%>/qna/qnaList.jsp" class="btn_more">+</a>
-                        </div>
-                        <ul class="board_con">
-                            <%
-                                if(qnaList.size() > 0){
-                                    for(Qna qna : qnaList) {
-                                        String dateStr = qna.getResdate().substring(0, 10);
-                                        String title = "";
-                                        if(qna.getTitle().length() > 70) {
-                                            title = qna.getTitle().substring(69) + "...";
-                                        } else {
-                                            title = qna.getTitle();
-                                        }
-
-                            %>
-                            <li><a href="<%=headerPath%>/qna/qnaList.jsp?bno=<%=qna.getQno() %>"><%=title %><span class="date"><%=dateStr %></span></a></li>
-                            <% } } else { %>
-                            <li class="no_date">
-                                등록된 신청글이 없습니다.
                             </li>
                             <% } %>
                         </ul>
